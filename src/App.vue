@@ -41,7 +41,6 @@ onMounted(() => {
           placeholder="e.g make a video"
           v-model="input_content"
         />
-        <!-- {{ input_content }} -->
 
         <h4>Pick a Category</h4>
         <div class="options">
