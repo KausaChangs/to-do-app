@@ -13,7 +13,11 @@ const todos_asc = computed(() =>
   })
 );
 
-const addTodo = () => {};
+const addTodo = () => {
+  if (input_content.value.trim() === "" || input_category.value === null) {
+    return;
+  }
+};
 
 watch(name, (newVal) => {
   localStorage.setItem("name", newVal);
@@ -65,8 +69,6 @@ onMounted(() => {
             <span class="bubble personal"></span>
             <div>Personal</div>
           </label>
-
-          {{ input_category }}
         </div>
         <input type="submit" value="add Todo" />
       </form>
