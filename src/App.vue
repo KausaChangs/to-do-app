@@ -65,7 +65,10 @@ onMounted(() => {
             <span class="bubble personal"></span>
             <div>Personal</div>
           </label>
+
+          {{ input_category }}
         </div>
+        <input type="submit" value="add Todo" />
       </form>
     </section>
   </main>
