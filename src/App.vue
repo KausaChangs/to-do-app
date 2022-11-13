@@ -90,6 +90,10 @@ onMounted(() => {
       </form>
     </section>
 
-    {{ todos_asc }}
+    <section class="todo-list"></section>
+    <h3>TODO LIST</h3>
+    <div class="list">
+      <div v-for="todo in todos_asc" :class="`todo-item`"></div>
+    </div>
   </main>
 </template>
