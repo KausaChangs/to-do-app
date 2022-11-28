@@ -90,10 +90,11 @@ onMounted(() => {
       </form>
     </section>
 
-    <section class="todo-list"></section>
-    <h3>TODO LIST</h3>
-    <div class="list">
-      <div v-for="todo in todos_asc" :class="`todo-item`"></div>
-    </div>
+    <section class="todo-list">
+      <h3>TODO LIST</h3>
+      <div class="list">
+        <div v-for="todo in todos_asc" :class="`todo-item`"></div>
+      </div>
+    </section>
   </main>
 </template>
