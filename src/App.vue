@@ -26,6 +26,10 @@ const addTodo = () => {
   });
 };
 
+const removeTodo = (todo) => {
+  todos.value = todos.value.filter((t) => t !== todo);
+};
+
 watch(
   todos,
   (newVal) => {
